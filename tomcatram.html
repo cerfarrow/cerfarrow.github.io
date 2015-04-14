@@ -39,7 +39,17 @@ set JAVA_OPTS=%JAVA_OPTS% -server -Xms256m -Xmx1024m   -XX:MaxNewSize=256m -XX:P
 </div>
 <div class="entry" id="main">
 <!-- content -->
+<h2 id="eclipsearguments">eclipse arguments</h2>
 
+<h3 id="">在开始部位添加</h3>
+
+<p>-Xms256M -Xmx1024M -XX:PermSize=64M -XX:MaxPermSize=128M</p>
+
+<h2 id="tomcatcatalinabat">tomcat  catalina.bat</h2>
+
+<p>在最后一个 set JAVA<em>OPTS处添加
+ ----- Execute The Requested Command ---------------------------------------
+set JAVA</em>OPTS=%JAVA_OPTS% -server -Xms256m -Xmx1024m   -XX:MaxNewSize=256m -XX:PermSize=64M -XX:MaxPermSize=128m</p>
 <!-- content end -->
 </div>
 <br>
